@@ -1,0 +1,32 @@
+*{
+    box-sizing:border-box;
+    font-family:"Montserrat", sans-serif;
+}
+
+.infos_animation{
+  animation: extends 1s;
+  animation-fill-mode: forwards;
+}
+
+.animation{
+  animation: extendothers 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes extends{
+  from{
+    width: 50%;
+  }
+  to{
+    width: 85%;
+  }
+}
+
+@keyframes extendothers{
+  from{
+    width: 50%;
+  }
+  to{
+    width: 70%;
+  }
+}
