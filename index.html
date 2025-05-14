@@ -11,228 +11,278 @@
     <link rel="stylesheet" href="cv_interactif.css">
 </head>
 <body>
-    <div class="container-fluid d-flex bg-grey">
-        <!-- 1er onglet -->
-        <div class="order-1" style="width: 50%; height: 1024px; position: relative">
-            <div style="width: 100%; height: 1024px; left: 0px; top: 0px; position: absolute; background: #ABC389; box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);z-index:600"></div>
-            <div class=" infos p-3 d-none" style="width: 413px; height: 679px; left: 62px; top: 190px; position: absolute; color: white; font-size: 16px; font-family: Montserrat; font-weight: 400; line-height: 20px; word-wrap: break-word;z-index:600;">
-                je suis curieux et éclectique. Passionné par le développement informatique, j'ai suivi une formation de Développeur PHP. Récemment, j'ai intégré une formation de Concepteur Développeur d'Applications.
-                <br/>
-                <br/>
-                Dans cette optique, je dois trouver un stage pratique obligatoire de 2 mois, non rémunéré. Je cherche donc une entreprise où je pourrais utiliser ma matière grise pour relever des défis et des challenges.<br>
-                <br>
-                Depuis mon enfance, je manipule des ordinateurs : je les utilise, je les démonte pour comprendre leur fonctionnement, ce qui m'a permis d'apprendre à les réparer, les dépanner de manière autonome.<br>
-                Au cours de ma formation, j'ai appris différents langages de programmation.<br>
-                <br>
-                Lors de mes différentes expériences en grande distribution, j'ai été au contact des clients, j'ai développé mon écoute afin de pouvoir comprendre et répondre à leurs besoins.<br>
-                Durant ma dernière expérience professionnelle en tant que développeur symfony junior, mon responsable m'a dit que j'avais beaucoup de potentiel dans ce domaine, et je souhaite désormais poursuivre dans cette voie.<br>
-                <br>
-                Créatif dans ma façon de penser, je cherche toujours à apporter des solutions et des perspectives nouvelles. Curieux de nature, je prends plaisir à comprendre le monde qui m'entoure.
+    <!-- Section Profile et Skills -->
+    <div class="container-fluid p-4">
+        <div class="row w-100 d-flex justify-content-center">
+            <!-- Profile -->
+            <div class="col-md-3 mb-4">
+                <div class="profile text-center">
+                    <img src="img/profil.jpeg" alt="Profil" class="img-fluid rounded-circle w-25" id="profile">
+                    <h1 class="text-center">Kévin Libaude</h1>
+                    <p class="text-center">Concepteur Développeur d'Applications</p>
+                    <p class="text-center">Passionné par le développement et la technologie.</p>
+                </div>
             </div>
-            <br>
-            <div class="tel d-none" style="width: 170px; height: 24px; left: 62.23px; top: 912px; position: absolute">
-                <div style="width: 145.54px; left: 25.09px; top: 0px; position: absolute; color: white; font-size: 20px; font-family: Montserrat; font-weight: 400; line-height: 24px; word-wrap: break-word;z-index:600;">06 68 76 88 20</div>
-                <div style="width: 14.05px; height: 14px; left: 0px; top: 5px; position: absolute; background: white"></div>
+            
+            <!-- Skills Grid -->
+            <div class="col-md-9">
+                <div class="container-fluid p-0">
+                    <div class="row g-3 align-items-center">
+                        <div class="d-flex flex-row flex-nowrap justify-content-between align-items-center w-100">
+                            <div class="col-auto">
+                                <div class="skill-container">
+                                    <a href="#devops">
+                                        <img src="img/DevOps.png" alt="DevOps" class="img-fluid" id="devops">
+                                        <div class="skill-details">
+                                            <h5 class="mb-2">DevOps</h5>
+                                            <ul class="list-unstyled">
+                                                <li>CI/CD Pipeline</li>
+                                                <li>Automatisation</li>
+                                                <li>Gestion des déploiements</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="skill-container">
+                                    <a href="#docker">
+                                        <img src="img/Docker.png" alt="Docker" class="img-fluid" id="docker">
+                                        <div class="skill-details">
+                                            <h5 class="mb-2">Docker</h5>
+                                            <ul class="list-unstyled">
+                                                <li>Conteneurisation</li>
+                                                <li>Docker Compose</li>
+                                                <li>Gestion des images</li>
+                                                <li>Orchestration</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="skill-container">
+                                    <a href="#git">
+                                        <img src="img/Git.png" alt="Git" class="img-fluid" id="git">
+                                        <div class="skill-details">
+                                            <h5 class="mb-2">Git</h5>
+                                            <ul class="list-unstyled">
+                                                <li>Gestion de versions</li>
+                                                <li>Branches et merge</li>
+                                                <li>Git Flow</li>
+                                                <li>Collaboration</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="skill-container">
+                                    <a href="#html">
+                                        <img src="img/Html.png" alt="HTML" class="img-fluid" id="html">
+                                        <div class="skill-details">
+                                            <h5 class="mb-2">HTML/CSS</h5>
+                                            <ul class="list-unstyled">
+                                                <li>HTML5</li>
+                                                <li>CSS3</li>
+                                                <li>Responsive Design</li>
+                                                <li>Bootstrap</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="skill-container">
+                                    <a href="#javascript">
+                                        <img src="img/Javascript.png" alt="JavaScript" class="img-fluid" id="javascript">
+                                        <div class="skill-details">
+                                            <h5 class="mb-2">JavaScript</h5>
+                                            <ul class="list-unstyled">
+                                                <li>ES6+</li>
+                                                <li>DOM Manipulation</li>
+                                                <li>Async/Await</li>
+                                                <li>Node.js</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="skill-container">
+                                    <a href="#php">
+                                        <img src="img/PHP.png" alt="PHP" class="img-fluid" id="php">
+                                        <div class="skill-details">
+                                            <h5 class="mb-2">PHP</h5>
+                                            <ul class="list-unstyled">
+                                                <li>PHP 8</li>
+                                                <li>POO</li>
+                                                <li>MVC</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="skill-container">
+                                    <a href="#symfony">
+                                        <img src="img/Symfony.png" alt="Symfony" class="img-fluid" id="symfony">
+                                        <div class="skill-details">
+                                            <h5 class="mb-2">Symfony</h5>
+                                            <ul class="list-unstyled">
+                                                <li>Framework PHP</li>
+                                                <li>Doctrine ORM</li>
+                                                <li>Twig</li>
+                                                <li>API Platform</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="skill-container">
+                                    <a href="#react">
+                                        <img src="img/React.png" alt="React" class="img-fluid" id="react">
+                                        <div class="skill-details">
+                                            <h5 class="mb-2">React</h5>
+                                            <ul class="list-unstyled">
+                                                <li>Hooks</li>
+                                                <li>Components</li>
+                                                <li>Redux</li>
+                                                <li>React Router</li>
+                                                <li>React Native</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="skill-container">
+                                    <a href="#python">
+                                        <img src="img/Python.png" alt="Python" class="img-fluid" id="python">
+                                        <div class="skill-details">
+                                            <h5 class="mb-2">Python</h5>
+                                            <ul class="list-unstyled">
+                                                <li>Django</li>
+                                                <li>Flask</li>
+                                                <li>Data Analysis</li>
+                                                <li>Automation</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="skill-container">
+                                    <a href="#owasp">
+                                        <img src="img/OWASP.png" alt="OWASP" class="img-fluid" id="owasp">
+                                        <div class="skill-details">
+                                            <h5 class="mb-2">OWASP</h5>
+                                            <ul class="list-unstyled">
+                                                <li>Security Testing</li>
+                                                <li>Vulnerability Assessment</li>
+                                                <li>Security Best Practices</li>
+                                                <li>Top 10 Vulnerabilities</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <div class="skill-container">
+                                    <a href="#nodejs">
+                                        <img src="img/NodeJS.png" alt="NodeJS" class="img-fluid" id="nodejs">
+                                        <div class="skill-details">
+                                            <h5 class="mb-2">Node.JS</h5>
+                                            <ul class="list-unstyled">
+                                                <li>Express.js</li>
+                                                <li>NPM</li>
+                                                <li>RESTful APIs</li>
+                                                <li>MongoDB</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mail d-none" style="width: 287.06px; height: 24px; left: 61.23px; top: 939px; position: absolute">
-                <div style="width: 260.97px; left: 26.10px; top: 0px; position: absolute; color: white; font-size: 20px; font-family: Montserrat; font-weight: 400; line-height: 24px; word-wrap: break-word;z-index:600;">kevin.libaude@gmail.com</div>
-                <div style="width: 15.06px; height: 15px; left: 0px; top: 4px; position: absolute; background: white"></div>
-            </div>
-            <div class="name d-none" style="width: 259px; height: 25px; left: 62.23px; top: 109px; position: absolute; color: white; font-size: 36px; font-family: Montserrat; font-weight: 400; line-height: 16px; word-wrap: break-word;z-index:600;">Libaude Kévin</div>
-            <div id="infos" style="width: 327px; height: 14.45px; left: 90%; top: 963px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0; color: 1E1E1E; font-size: 36px; font-family: Montserrat; font-weight: 400; line-height: 16px; word-wrap: break-word;z-index:600;">Infos personnelles</div>
-            <img style="width: 119.44px; height: 119px; left: 356.32px; top: 62px; position: absolute; border-radius: 50%" src="https://via.placeholder.com/119x119;z-index:100;" />
         </div>
-        <!-- 2ème onglet -->
-        <div class="order-2" style="width: 50%; height: 1024px; position: relative">
-            <div style="width: 100%; height: 1024px; left: 0px; top: 0px; position: absolute; background: #89BEC3; box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);z-index:500"></div>
-            <div class=" experiences p-3 d-none" style="width:413px; height: 679px; left: 62px; top: 70px; position: absolute; color: white; font-size: 16px; font-family: Montserrat; font-weight: 400; line-height: 20px; word-wrap: break-word;z-index:500;">
-                <h4>Dev symfony junior</h4>
-                2023 - 2024<br>
-                MMCD<br>
-                <br>
-                <h4>Médiateur sociale et numérique</h4>
-                2020 - 2023<br>
-                MJC Persan<br>
-                <br>
-                <h4>Animateur polyvalent</h4>
-                2017 - 2018<br>
-                Destination Multimédia<br>
-                <br>
-                <h4>Community Manager</h4>
-                2013 - 2017<br>
-                Teamspeak Riot Games<br>
-                <br>
-                <h4>Infographiste</h4>
-                2012<br>
-                Carlina Studio<br>
-                <br>
-                <br>
-                <h3>Formations</h4>
-                <br>
-                <h4>Titre CDA</h4>
-                2024 - 2025<br>
-                Greta<br>
-                <br>
-                <h4>Développeur PHP</h4>
-                2011<br>
-                IFOCOP<br>
-                <br>
-                <h4>Infographiste PAO</h4>
-                2006 - 2007<br>
-                MJM Graphic Design
+
+        <!-- Section Formation et Expériences -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">Formation</h2>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item mb-4">
+                                <h5 class="fw-bold">Titre Professionnel Concepteur Développeur d'Applications</h5>
+                                <p class="text-muted mb-1">2024 - 2025 | GRETA 95</p>
+                                <p>Formation intensive en conception et développement d'applications</p>
+                            </div>
+
+                            <div class="timeline-item mb-4">
+                                <h5 class="fw-bold">Formation PHP</h5>
+                                <p class="text-muted mb-1">2011 | Ifocop</p>
+                                <p>Formation fullstack PHP Javascript</p>
+                            </div>
+                            <div class="timeline-item mb-4">
+                                <h5 class="fw-bold">Formation PAO</h5>
+                                <p class="text-muted mb-1">2006 | MJM Graphic Design</p>
+                                <p>Formation PAO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="experiences" style="width: 219px; height: 11.62px; left: 90%; top: 963px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0; color: #1E1E1E; font-size: 36px; font-family: Montserrat; font-weight: 400; line-height: 16px; word-wrap: break-word;z-index:500;">Expériences</div>
-        </div>
-        <!-- 3ème onglet -->
-        <div class="order-3" style="width: 50%; height: 1024px; position: relative">
-            <div style="width: 100%; height: 1024px; left: 0px; top: 0px; position: absolute; background: #9289C3; box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);z-index:400;"></div>
-            <div class="competences p-3 d-none" style="width: 413px; height: 679px; left: 62px; top: 70px; position: absolute; color: white; font-size: 16px; font-family: Montserrat; font-weight: 400; line-height: 20px; word-wrap: break-word;z-index:400;">
-                <h4>Javascript</h4>
-                Node.JS<br>
-                Express.JS<br>
-                React/React native<br>
-                <br>
-                <h4>HTML/CSS</h4>
-                Bootstrap<br>
-                <br>
-                <h4>PHP</h4>
-                Symfony<br>
-                Twig<br>
-                <h4>Python</h4>
-                Django<br>
-                Panda<br>
-                <br>
-                <h4>Java</h4>
-                Spring<br>
-                <br>
-                <h4>DevOps</h4>
-                Docker<br>
-                CI-CD<br>
-                SonarQube<br>
-                Méthode Merise<br>
-                UML<br>
-                Mysql<br>
-                SQL<br>
-                <br>
-                <h4>Graphisme</h4>
-                Photoshop<br>
-                Illustrator<br>
-                Figma<br>
-                UI/UX<br>
-                <br>
-                <h4>Git</h4>
-                GitHub
+
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">Expériences Professionnelles</h2>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item mb-4">
+                                <h5 class="fw-bold">Product Owner</h5>
+                                <p class="text-muted mb-1">2025 | InnovQube</p>
+                                <ul class="list-unstyled">
+                                    <li>• Gestion d'équipes</li>
+                                    <li>• Mise en place de Users Stories</li>
+                                    <li>• Rédaction de Users Stories</li>
+                                    <li>• Planification de sprints</li>
+                                    <li>• Gestion du backlog</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item mb-4">
+                                <h5 class="fw-bold">Développeur Symfony Junior</h5>
+                                <p class="text-muted mb-1">2023 - 2024 | MMCD</p>
+                                <ul class="list-unstyled">
+                                    <li>• Développement de fonctionnalités</li>
+                                    <li>• Reprise d'un projet sous Symfony 5</li>
+                                    <li>• Correction de bugs et optimisations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="competences" style="width: 252px; height: 15px; left: 90%; top: 963px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0; color: #1E1E1E; font-size: 36px; font-family: Montserrat; font-weight: 400; line-height: 16px; word-wrap: break-word;z-index:400;">Compétences</div>
-        </div>
-        <!-- 4ème onglet -->
-        <div class="order-4" style="width: 50%; height: 1024px; position: relative">
-            <div style="width: 100%; height: 1024px; left: 0px; top: 0px; position: absolute; background: #C39D89; box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);z-index:300;"></div>
-            <div class="divers p-3 d-none" style="width:100%; height: 679px; left: 62px; top: 70px; position: absolute; color: white; font-size: 16px; font-family: Montserrat; font-weight: 400; line-height: 20px; word-wrap: break-word;z-index:300;">
-                <h4>Jeux vidéos</h4>
-                RTS, FPS, StoryTeller<br>
-                <br>
-                <h4>Informatique</h4>
-                réparer, monter<br>
-                développement, programmation<br>
-                <br>
-                <h4>Graphisme</h4>
-                création, webdesign<br>
-                <br>
-                <br>
-                <h3>Langues</h3>
-                <br>
-                <h4>Français</h4>
-                langue maternelle
-                <h4>Anglais</h4>
-                lu,écrit,parlé
-                <h4>Espagnol</h4> 
-                notions
-            </div>
-            <div id="divers" style="width: 113px; height: 15.64px; left: 90%; top: 963px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0; color: #1E1E1E; font-size: 36px; font-family: Montserrat; font-weight: 400; line-height: 16px; word-wrap: break-word;z-index:300;">Divers</div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
-    <script>
-        let experience = document.querySelector(".experiences");
-        let competences = document.querySelector(".competences");
-        let divers = document.querySelector(".divers");
-        let infos = document.querySelector(".infos");
-        let tel = document.querySelector(".tel");
-        let mail = document.querySelector(".mail");
-        let name = document.querySelector(".name");
-        let diversId = document.querySelector("#divers");
-        let infosId = document.querySelector("#infos");
-        let experienceId = document.querySelector("#experiences");
-        let competencesId = document.querySelector("#competences");
-
-        let order1 = document.querySelector(".order-1");
-        let order2 = document.querySelector(".order-2");
-        let order3 = document.querySelector(".order-3");
-        let order4 = document.querySelector(".order-4");
-
-        order1.addEventListener("mouseenter", function() {
-            order1.classList.add("infos_animation");
-            infosId.style.color = "white";
-            setTimeout(function() {
-                tel.classList.remove("d-none");
-                mail.classList.remove("d-none");
-                name.classList.remove("d-none");
-                infos.classList.remove("d-none");
-            }, 1000);
-            })
-
-        order1.addEventListener("mouseleave", function() {
-            order1.classList.remove("infos_animation");
-            infosId.style.color = "#1E1E1E";
-            infos.classList.add("d-none");
-            tel.classList.add("d-none");
-            mail.classList.add("d-none");
-            name.classList.add("d-none");
-        });
-
-        order2.addEventListener("mouseenter", function() {
-            order2.classList.add("animation");
-            experienceId.style.color = "white";
-            setTimeout(function() {
-                experience.classList.remove("d-none");
-            }, 1000);
-        });
-
-        order2.addEventListener("mouseleave", function() {
-            experience.classList.add("d-none");
-            experienceId.style.color = "#1E1E1E";
-            order2.classList.remove("animation");
-        });
-
-        order3.addEventListener("mouseenter", function() {
-            order3.classList.add("animation");
-            competencesId.style.color = "white";
-            setTimeout(function() {
-                competences.classList.remove("d-none");
-            }, 1000);
-        });
-
-        order3.addEventListener("mouseleave", function() {
-            competences.classList.add("d-none");
-            competencesId.style.color = "#1E1E1E";
-            order3.classList.remove("animation");
-        });
-
-        order4.addEventListener("mouseenter", function() {
-            order4.classList.add("animation");
-            diversId.style.color = "white";
-            setTimeout(function() {
-                divers.classList.remove("d-none");
-            }, 1000);
-        });
-
-        order4.addEventListener("mouseleave", function() {
-            divers.classList.add("d-none");
-            diversId.style.color = "#1E1E1E";
-            order4.classList.remove("animation");
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

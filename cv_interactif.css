@@ -1,32 +1,125 @@
-*{
-    box-sizing:border-box;
-    font-family:"Montserrat", sans-serif;
+.skill-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0;
 }
 
-.infos_animation{
-  animation: extends 1s;
-  animation-fill-mode: forwards;
+.skill-container a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.animation{
-  animation: extendothers 1s;
-  animation-fill-mode: forwards;
+.skill-container img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Animation optionnelle au survol */
 }
 
-@keyframes extends{
-  from{
-    width: 50%;
-  }
-  to{
-    width: 85%;
-  }
+/* Animation optionnelle au survol */
+.skill-container img:hover {
+    transform: scale(1.1);
 }
 
-@keyframes extendothers{
-  from{
-    width: 50%;
-  }
-  to{
-    width: 70%;
-  }
+.skill-details {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.skill-details h5 {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-details ul {
+    margin: 0;
+    padding: 0;
+}
+
+.skill-details li {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Animation au survol */
+.skill-container:hover .skill-details {
+    opacity: 1;
+    visibility: visible;
+    top: 110%;
+}
+
+/* Flèche pointant vers l'image */
+.skill-details::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent rgba(255, 255, 255, 0.95) transparent;
+}
+
+/* Timeline styling */
+.timeline-item {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid #ABC389;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ABC389;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.card-title {
+    color: #333;
+    border-bottom: 2px solid #ABC389;
+    padding-bottom: 10px;
+}
+
+.timeline-item h5 {
+    color: #333;
+}
+
+.list-unstyled li {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .d-flex.flex-row.flex-nowrap {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+    }
+    
+    .skill-container {
+        flex-shrink: 0;
+    }
 }
