@@ -11,15 +11,15 @@
 }
 
 .skill-container img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     transition: transform 0.3s ease; /* Animation optionnelle au survol */
 }
 
 /* Animation optionnelle au survol */
 .skill-container img:hover {
-    transform: scale(1.1);
+    transform: scale(2);
 }
 
 .skill-details {
@@ -27,7 +27,7 @@
     top: 120%;
     left: 50%;
     transform: translateX(-50%);
-    width: 150px;
+    width: 200px;
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     padding: 1rem;
@@ -96,12 +96,33 @@
     border: none;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.95);
+    margin-bottom: 2rem; /* Ajoute de l'espace entre les cartes */
+    width: 100%; /* Utilise toute la largeur disponible */
+    max-width: 800px; /* Limite la largeur maximale */
+    margin-left: auto; /* Centre les cartes */
+    margin-right: auto;
 }
 
 .card-title {
     color: #333;
     border-bottom: 2px solid #ABC389;
     padding-bottom: 10px;
+}
+
+/* Ajout de l'ordre d'affichage */
+.experiences-section {
+    order: 1;
+    margin-bottom: 2rem;
+}
+
+.formation-section {
+    order: 2;
+}
+
+/* Ajustement du conteneur de timeline */
+.timeline {
+    padding: 1rem;
+    max-width: 100%;
 }
 
 .timeline-item h5 {
@@ -113,6 +134,7 @@
     color: #666;
 }
 
+/* Responsive design */
 @media (max-width: 768px) {
     .d-flex.flex-row.flex-nowrap {
         overflow-x: auto;
@@ -121,5 +143,19 @@
     
     .skill-container {
         flex-shrink: 0;
+    }
+    
+    .card {
+        margin: 1rem auto;
+        width: 95%;
+    }
+    
+    .timeline {
+        padding: 0.5rem;
+    }
+    
+    .experiences-section,
+    .formation-section {
+        width: 100%;
     }
 }
